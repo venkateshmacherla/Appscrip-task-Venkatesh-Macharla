@@ -1,119 +1,190 @@
-# Appscrip PLP — Next.js Demo
+# Appscrip PLP - Product Listing Page
 
-This repository contains a Product Listing Page implemented with Next.js and server-side rendering (SSR). It fetches mock products from FakeStoreAPI and renders an SEO-friendly, responsive PLP.
+A modern, mobile-first Product Listing Page (PLP) built with **Next.js** and SSR. Features SEO optimization, API-powered product data, sortable/filterable grid, and thoughtful code organization.
 
-## Scripts
+---
 
-In the project directory, use:
+## 🚀 Features
 
-### `npm run dev`
+- ✅ **Next.js with Server-Side Rendering (SSR)**
+- ✅ **SEO Optimized:** Meta tags, Schema markup, accessible headings, alt text
+- ✅ **API Integration:** Fetches live products from FakeStoreAPI or DummyJSON
+- ✅ **Favorites:** Like/unlike products, view liked products
+- ✅ **Sort & Filter:** Sort by price/popularity/date, filter by category
+- ✅ **Mobile Responsive:** Looks great on all devices
+- ✅ **Minimal Dependencies:** Only essentials (Next.js, React, Tailwind/CSS)
+- ✅ **Clean, Modular Components**
+- ✅ **Netlify or Vercel Ready**
 
-Runs the app in development mode (Next.js dev server). Open http://localhost:3000 to view.
+---
 
-### `npm run build`
+## 📋 Requirements Completed
 
-Builds the production app (Next.js).
+1. **HTML & CSS:**  
+   - Standalone HTML/CSS sample in `/public/index.html`  
+   - Pure CSS, no frameworks, responsive grid
 
-### `npm start`
+2. **React/Next.js Implementation:**  
+   - Built with Next.js (using `App Router` and SSR)
+   - Async data fetch in `getServerSideProps`
+   - PLP grid and filters as React components
 
-Runs the production server after build.
+3. **API Integration & Fallback:**  
+   - `https://fakestoreapi.com/products` used for real data  
+   - Graceful fallback to mock data if API fails
 
-## How this meets the task
+4. **SEO Settings:**  
+   - Custom HTML `<title>`, meta description, JSON-LD schema, OG/Twitter cards
+   - Properly nested H1, H2, semantic tags, descriptive alt attributes
 
-- Uses Next.js to enable SSR via `getServerSideProps`.
-- SEO: title, meta description, H1/H2, JSON-LD schema (ItemList), alt text for images.
-- Responsive layout with CSS grid for product cards.
-- Minimal external packages.
+5. **Code Quality:**  
+   - Consistent naming (`camelCase` for vars, `PascalCase` for components)
+   - Modern folder structure (see Project Structure)
+   - Minimal dependencies
 
-## Deploy
+6. **Netlify/Vercel Deploy:**  
+   - Production-ready config: `netlify.toml` and `next.config.js`  
+   - SSR supported on Vercel (default) and Netlify (via adapter)
 
-You can deploy this project to Vercel or Netlify. Example (Vercel):
+---
 
-1. Commit and push to a public GitHub repo named `Appscrip-task-<YourName>`.
-2. Import the repo into Vercel and follow the setup (framework: Next.js).
+## 🛠️ Tech Stack
 
-Netlify also supports Next.js (use the official adapter or use the built static export for simple setups). Vercel is recommended for full SSR support.
+- **Next.js 14** / **React 18**
+- **Tailwind CSS** or custom CSS modules
+- **FakeStoreAPI**
 
-## Notes
+---
 
-- The app fetches data from `https://fakestoreapi.com/products` on the server to demonstrate SSR.
-- The `public/` folder contains image assets (logo, banner).
+## 📦 Installation
 
-## Local testing
-
-Install deps and run dev:
-
-```powershell
+git clone https://github.com/venkateshmacherla/Appscrip-task-Venkatesh-Macharla.git
+cd appscrip-task
 npm install
+
+text
+
+## 🏗️ Running Locally
+
 npm run dev
-```
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+text
+Visit [http://localhost:3000](http://localhost:3000)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🏗️ Build & Deployment
 
-### `npm start`
+### Build for Production
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm run build
+npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+text
 
-### `npm test`
+### Deploy to Netlify or Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Vercel:**
+- Push to repo, connect via Vercel dashboard  
+- Vercel auto-detects, SSR just works
 
-### `npm run build`
+**Netlify:**
+- Push repo, connect & deploy (see `netlify.toml`)
+- Or:  
+npm install -g netlify-cli
+netlify login
+npm run build
+netlify deploy --prod
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+text
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+appscrip-task-venkatesh-macharla/
+├── .git/
+├── .next/
+├── node_modules/
+├── public/
+│   ├── payment-icons/
+│   ├── banner.jpg
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo.png
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── robots.txt
+│   ├── usd.png
+├── src/
+│   ├── components/
+│   │   ├── ErrorBoundary.js
+│   │   ├── FilterControlRow.js
+│   │   ├── FilterSidebar.js
+│   │   ├── Footer.js
+│   │   ├── Navbar.js
+│   │   ├── ProductCard.js
+│   │   ├── ProductList.js
+│   ├── pages/
+│   │   ├── _app.js
+│   │   ├── index.js
+│   ├── styles/
+│   │   ├── FilterControlRow.module.css
+│   │   ├── FilterSidebar.module.css
+│   │   ├── Navbar.module.css
+│   │   ├── ProductCard.module.css
+│   │   ├── ProductList.module.css
+│   │   ├── globals.css
+│   │   ├── App.css
+│   │   ├── index.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.js
+│   ├── logo.svg
+├── netlify.toml
+├── next.config.js
+├── package.json
+├── package-lock.json
+├── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+text
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔍 SEO & Best Practices
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Page title and meta description in `<Head>`
+- H1 on main product grid, H2 on subsections
+- Open Graph and Twitter card tags for social preview
+- JSON-LD (type: ItemList or Organization)
+- All images include descriptive `alt` text
+- Mobile-first, then desktop/large screen optimizations
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 API Integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Currently uses **FakeStoreAPI**  
+- Endpoint: `https://fakestoreapi.com/products`  
+- For more/fake data: swap to DummyJSON (`https://dummyjson.com/products?limit=100`)
 
-### Code Splitting
+If API is unreachable, the page handles fallback gracefully.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📝 Code & Naming Conventions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Component files:** PascalCase (`ProductList.jsx`)
+- **Functions/variables:** camelCase (`getProducts`, `filteredProducts`)
+- **Styling:** Tailwind, CSS Modules, or ES6+
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Performance
 
-### Advanced Configuration
+- SSR for rapid initial load
+- Image optimization (use Next.js `Image` component if possible)
+- Minimal bundle by default
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
