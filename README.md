@@ -1,122 +1,81 @@
-# Appscrip PLP - Product Listing Page
+Appscrip PLP - Product Listing Page
 
-A modern, mobile-first Product Listing Page (PLP) built with **Next.js** and SSR. Features SEO optimization, API-powered product data, sortable/filterable grid, and thoughtful code organization.
+A modern, mobile-first Product Listing Page (PLP) built with Next.js and Server-Side Rendering (SSR).
+Designed for performance, SEO optimization, and clean modular code — deployed seamlessly on Vercel.
 
----
+Live Demo: [https://appscrip-task-venkatesh.vercel.app](https://appscrip-task-venkatesh-macharla.vercel.app/)
+ (replace with your actual link)
 
-## 🚀 Features
+Features
 
-- ✅ **Next.js with Server-Side Rendering (SSR)**
-- ✅ **SEO Optimized:** Meta tags, Schema markup, accessible headings, alt text
-- ✅ **API Integration:** Fetches live products from FakeStoreAPI or DummyJSON
-- ✅ **Favorites:** Like/unlike products, view liked products
-- ✅ **Sort & Filter:** Sort by price/popularity/date, filter by category
-- ✅ **Mobile Responsive:** Looks great on all devices
-- ✅ **Minimal Dependencies:** Only essentials (Next.js, React, Tailwind/CSS)
-- ✅ **Clean, Modular Components**
-- ✅ **Netlify or Vercel Ready**
+✅ Next.js with SSR (Server-Side Rendering)
 
----
+✅ SEO Optimized — meta tags, schema markup, headings, alt text
 
-## 📋 Requirements Completed
+✅ API Integration — pulls data from FakeStoreAPI
+ or DummyJSON
 
-1. **HTML & CSS:**  
-   - Standalone HTML/CSS sample in `/public/index.html`  
-   - Pure CSS, no frameworks, responsive grid
+✅ Favorites System — like/unlike products and view liked items
 
-2. **React/Next.js Implementation:**  
-   - Built with Next.js (using `App Router` and SSR)
-   - Async data fetch in `getServerSideProps`
-   - PLP grid and filters as React components
+✅ Sorting & Filtering — by price, popularity, and date; filter by category
 
-3. **API Integration & Fallback:**  
-   - `https://fakestoreapi.com/products` used for real data  
-   - Graceful fallback to mock data if API fails
+✅ Responsive Design — mobile-first UI that scales beautifully
 
-4. **SEO Settings:**  
-   - Custom HTML `<title>`, meta description, JSON-LD schema, OG/Twitter cards
-   - Properly nested H1, H2, semantic tags, descriptive alt attributes
+✅ Minimal Dependencies — built only with essentials
 
-5. **Code Quality:**  
-   - Consistent naming (`camelCase` for vars, `PascalCase` for components)
-   - Modern folder structure (see Project Structure)
-   - Minimal dependencies
+✅ Clean, Modular Components
 
-6. **Netlify/Vercel Deploy:**  
-   - Production-ready config: `netlify.toml` and `next.config.js`  
-   - SSR supported on Vercel (default) and Netlify (via adapter)
+✅ Deployed on Vercel
 
----
+Tech Stack
 
-## 🛠️ Tech Stack
+Next.js 14 / React 18
 
-- **Next.js 14** / **React 18**
-- **Tailwind CSS** or custom CSS modules
-- **FakeStoreAPI**
+Tailwind CSS or CSS Modules
 
----
+FakeStoreAPI 
 
-## 📦 Installation
+☁️ Vercel Deployment
 
+Installation
 git clone https://github.com/venkateshmacherla/Appscrip-task-Venkatesh-Macharla.git
 cd appscrip-task
 npm install
 
-text
-
-## 🏗️ Running Locally
-
+Running Locally
 npm run dev
 
-text
-Visit [http://localhost:3000](http://localhost:3000)
 
----
+Then open 👉 http://localhost:3000
 
-## 🏗️ Build & Deployment
-
-### Build for Production
-
+Build & Deployment
+Production Build
 npm run build
 npm start
 
-text
+Deploy on Vercel
 
-### Deploy to Netlify or Vercel
+Push your repo to GitHub
 
-**Vercel:**
-- Push to repo, connect via Vercel dashboard  
-- Vercel auto-detects, SSR just works
+Go to the Vercel Dashboard
 
-**Netlify:**
-- Push repo, connect & deploy (see `netlify.toml`)
-- Or:  
-npm install -g netlify-cli
-netlify login
-npm run build
-netlify deploy --prod
+Import your repository
 
-text
+Click Deploy – SSR works automatically
 
----
+Your app supports full Server-Side Rendering (no extra setup needed).
 
-## 📁 Project Structure
-
+Project Structure
 appscrip-task-venkatesh-macharla/
-├── .git/
-├── .next/
-├── node_modules/
 ├── public/
 │   ├── payment-icons/
 │   ├── banner.jpg
 │   ├── favicon.ico
 │   ├── index.html
 │   ├── logo.png
-│   ├── logo192.png
-│   ├── logo512.png
 │   ├── manifest.json
 │   ├── robots.txt
-│   ├── usd.png
+│   └── usd.png
 ├── src/
 │   ├── components/
 │   │   ├── ErrorBoundary.js
@@ -125,10 +84,10 @@ appscrip-task-venkatesh-macharla/
 │   │   ├── Footer.js
 │   │   ├── Navbar.js
 │   │   ├── ProductCard.js
-│   │   ├── ProductList.js
+│   │   └── ProductList.js
 │   ├── pages/
 │   │   ├── _app.js
-│   │   ├── index.js
+│   │   └── index.js
 │   ├── styles/
 │   │   ├── FilterControlRow.module.css
 │   │   ├── FilterSidebar.module.css
@@ -136,55 +95,55 @@ appscrip-task-venkatesh-macharla/
 │   │   ├── ProductCard.module.css
 │   │   ├── ProductList.module.css
 │   │   ├── globals.css
-│   │   ├── App.css
-│   │   ├── index.css
+│   │   └── index.css
 │   ├── App.js
 │   ├── App.test.js
 │   ├── index.js
-│   ├── logo.svg
+│   └── logo.svg
 ├── netlify.toml
 ├── next.config.js
 ├── package.json
 ├── package-lock.json
-├── README.md
+└── README.md
 
-text
+🔍 SEO & Best Practices
 
----
+🏷️ <Head> includes dynamic title & meta description
 
-## 🔍 SEO & Best Practices
+🔠 Proper heading hierarchy (H1 → H2)
 
-- Page title and meta description in `<Head>`
-- H1 on main product grid, H2 on subsections
-- Open Graph and Twitter card tags for social preview
-- JSON-LD (type: ItemList or Organization)
-- All images include descriptive `alt` text
-- Mobile-first, then desktop/large screen optimizations
+🧩 Open Graph + Twitter Card tags for social preview
 
----
+📄 JSON-LD schema (ItemList / Organization)
 
-## 🌐 API Integration
+🖼️ All images use descriptive alt text
 
-Currently uses **FakeStoreAPI**  
-- Endpoint: `https://fakestoreapi.com/products`  
-- For more/fake data: swap to DummyJSON (`https://dummyjson.com/products?limit=100`)
+📱 Mobile-first layout
 
-If API is unreachable, the page handles fallback gracefully.
+🌐 API Integration
 
----
+Primary Endpoint:
+https://fakestoreapi.com/products
 
-## 📝 Code & Naming Conventions
+Alternative:
+https://dummyjson.com/products?limit=100
 
-- **Component files:** PascalCase (`ProductList.jsx`)
-- **Functions/variables:** camelCase (`getProducts`, `filteredProducts`)
-- **Styling:** Tailwind, CSS Modules, or ES6+
+🧩 If the API is unreachable, the app gracefully falls back to local mock data.
 
----
+🧾 Code & Naming Conventions
+Type	Convention	Example
+Components	PascalCase	ProductList.jsx
+Functions/Variables	camelCase	getProducts, filteredProducts
+Styling	Tailwind / CSS Modules	ProductCard.module.css
+⚡ Performance Highlights
 
-## 🚀 Performance
+⚡ SSR for faster first paint and SEO boost
 
-- SSR for rapid initial load
-- Image optimization (use Next.js `Image` component if possible)
-- Minimal bundle by default
+🖼️ Optimized Images via Next.js <Image />
 
----
+📦 Lightweight Bundle with modular imports
+
+🧑‍🎨 Author
+
+Venkatesh Macharla
+🔗 GitHub
