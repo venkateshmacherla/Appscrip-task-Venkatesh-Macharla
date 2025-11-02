@@ -1,55 +1,53 @@
-Appscrip PLP - Product Listing Page
+# 🛍️ Appscrip PLP - Product Listing Page
 
-A modern, mobile-first Product Listing Page (PLP) built with Next.js and Server-Side Rendering (SSR).
-Designed for performance, SEO optimization, and clean modular code — deployed seamlessly on Vercel.
+A **modern, mobile-first Product Listing Page (PLP)** built with **Next.js** and **Server-Side Rendering (SSR)**.  
+Designed for performance, SEO optimization, and clean modular code — deployed seamlessly on **Vercel**.
 
-Live Demo: [https://appscrip-task-venkatesh.vercel.app](https://appscrip-task-venkatesh-macharla.vercel.app/)
- (replace with your actual link)
+[![Deploy on Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-Features
+🌐 **Live Demo:** https://appscrip-task-venkatesh-macharla.vercel.app/
+*(Replace with your actual deployed link)*
 
-✅ Next.js with SSR (Server-Side Rendering)
+---
 
-✅ SEO Optimized — meta tags, schema markup, headings, alt text
+## 🚀 Features
 
-✅ API Integration — pulls data from FakeStoreAPI
- or DummyJSON
+- **Next.js with SSR (Server-Side Rendering)**
+- **SEO Optimized:** Meta tags, schema markup, headings, alt text  
+- **API Integration:** Fetches data from [FakeStoreAPI](https://fakestoreapi.com/) or [DummyJSON](https://dummyjson.com/)
+- **Favorites System:** Like/unlike products and view liked items
+- **Sorting & Filtering:** Sort by price, popularity, and date; filter by category
+- **Responsive Design:** Mobile-first layout that looks great on all screens
+- **Minimal Dependencies:** Built with essentials only
+- **Clean, Modular Components**
+- **Deployed on Vercel**
 
-✅ Favorites System — like/unlike products and view liked items
+---
 
-✅ Sorting & Filtering — by price, popularity, and date; filter by category
+## 🛠️ Tech Stack
 
-✅ Responsive Design — mobile-first UI that scales beautifully
+- **Next.js 14 / React 18**
+- **Tailwind CSS** or **CSS Modules**
+- **FakeStoreAPI / DummyJSON**
+- **Vercel Deployment**
 
-✅ Minimal Dependencies — built only with essentials
+---
 
-✅ Clean, Modular Components
+## 📦 Installation
 
-✅ Deployed on Vercel
-
-Tech Stack
-
-Next.js 14 / React 18
-
-Tailwind CSS or CSS Modules
-
-FakeStoreAPI 
-
-☁️ Vercel Deployment
-
-Installation
+```bash
 git clone https://github.com/venkateshmacherla/Appscrip-task-Venkatesh-Macharla.git
 cd appscrip-task
 npm install
 
-Running Locally
+## Running Locally
 npm run dev
 
 
-Then open 👉 http://localhost:3000
+Then open http://localhost:3000
 
 Build & Deployment
-Production Build
+Build for Production
 npm run build
 npm start
 
@@ -57,15 +55,15 @@ Deploy on Vercel
 
 Push your repo to GitHub
 
-Go to the Vercel Dashboard
+Go to Vercel Dashboard
 
 Import your repository
 
-Click Deploy – SSR works automatically
+Click Deploy — SSR works automatically
 
-Your app supports full Server-Side Rendering (no extra setup needed).
+✅ Full Server-Side Rendering (SSR) support out of the box.
 
-Project Structure
+📁 Project Structure
 appscrip-task-venkatesh-macharla/
 ├── public/
 │   ├── payment-icons/
@@ -106,44 +104,24 @@ appscrip-task-venkatesh-macharla/
 ├── package-lock.json
 └── README.md
 
-🔍 SEO & Best Practices
+SEO & Best Practices
 
-🏷️ <Head> includes dynamic title & meta description
+Page title and meta description inside <Head>
 
-🔠 Proper heading hierarchy (H1 → H2)
+Proper heading hierarchy (H1 → H2)
 
-🧩 Open Graph + Twitter Card tags for social preview
+Open Graph + Twitter Card tags for social preview
 
-📄 JSON-LD schema (ItemList / Organization)
+JSON-LD schema (ItemList / Organization)
 
-🖼️ All images use descriptive alt text
+Descriptive alt text for all images
 
-📱 Mobile-first layout
+Mobile-first responsive design
 
 🌐 API Integration
 
 Primary Endpoint:
 https://fakestoreapi.com/products
-
-Alternative:
-https://dummyjson.com/products?limit=100
-
-🧩 If the API is unreachable, the app gracefully falls back to local mock data.
-
-🧾 Code & Naming Conventions
-Type	Convention	Example
-Components	PascalCase	ProductList.jsx
-Functions/Variables	camelCase	getProducts, filteredProducts
-Styling	Tailwind / CSS Modules	ProductCard.module.css
-⚡ Performance Highlights
-
-⚡ SSR for faster first paint and SEO boost
-
-🖼️ Optimized Images via Next.js <Image />
-
-📦 Lightweight Bundle with modular imports
-
-🧑‍🎨 Author
 
 Venkatesh Macharla
 🔗 GitHub
