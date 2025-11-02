@@ -104,8 +104,8 @@ appscrip-task-venkatesh-macharla/
 ├── package-lock.json
 └── README.md
 
-SEO & Best Practices
-
+**🔍 SEO & Best Practices
+**
 Page title and meta description inside <Head>
 
 Proper heading hierarchy (H1 → H2)
@@ -123,5 +123,6 @@ Mobile-first responsive design
 Primary Endpoint:
 https://fakestoreapi.com/products
 
+**Author
+**
 Venkatesh Macharla
-🔗 GitHub
