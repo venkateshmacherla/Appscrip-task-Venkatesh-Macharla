@@ -1,0 +1,84 @@
+.sidebar {
+  min-width: 220px;
+  max-width: 270px;
+  padding-right: 14px;
+  padding-top: 22px;
+  background: #fff;
+  border-right: 1px solid #eee;
+}
+.itemCount {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.hideFilter {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.filterCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.details {
+  margin-bottom: 16px;
+}
+.summary {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.filterSectionOptions {
+  color: #666;
+  font-size: 14px;
+  margin-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    min-width: 170px;
+    padding-right: 6px;
+  }
+}
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    min-width: 130px;
+    max-width: 160px;
+    padding-right: 2px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.likeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0;
+}
+
+.liked svg {
+  fill: red;
+  stroke: red;
+}
+
+.card {
+  position: relative; 
+}
